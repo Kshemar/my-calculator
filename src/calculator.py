@@ -13,7 +13,7 @@ def subtract(a, b):
     return a - b
 
 def multiply(a, b):
-    """Multiply two numbers with input validation and logging."""
+    #Multiply two numbers with input validation and logging.
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError("Both arguments must be numbers")
     
@@ -23,7 +23,7 @@ def multiply(a, b):
     return result
 
 def divide(a, b):
-    """Divide a by b with enhanced error handling."""
+   #Divide a by b with enhanced error handling.
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
         raise TypeError("Division requires numeric inputs")
     if b == 0:
@@ -57,6 +57,14 @@ def sqrt(a):
     result = math.sqrt(a)
     print(f"Result: {result}")
     return result
+
+def mul(a, b):
+ return a * b
+def div(a, b):
+ if b == 0:
+    raise ValueError("Cannot divide by zero")
+ return a / b
+
 
 if __name__ == "__main__":
     print("🧮 Calculator Module")
